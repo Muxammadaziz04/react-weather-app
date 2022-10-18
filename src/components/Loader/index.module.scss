@@ -1,0 +1,32 @@
+.loader{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+
+    &__wrapper{
+        background: white;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & > img{
+            max-width: 70%;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .loader__wrapper{
+        border-radius: 20px;
+        max-width: 100px;
+        max-height: 100px;
+    }
+}

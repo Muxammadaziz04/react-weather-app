@@ -1,0 +1,47 @@
+.alert{
+    position: fixed;
+    width: clamp(100px, 400px, 400px);
+    top: 0;
+    right: 0;
+    z-index: 111;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 6px;
+    background: rgb(248, 215, 218);
+    border: 1px solid rgb(245, 194, 199);
+    animation: fade 1s forwards;
+    
+    & > span{
+        color: rgb(132, 32, 41);
+        line-height: 25px;
+        font-size: 16px;
+    }
+
+    & > button{
+        margin-left: 10px;
+        border: none;
+        background: transparent;
+        & > img{
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
+
+.close{
+    width: 0;
+    display: none;
+    visibility: hidden;
+}
+
+@keyframes fade {
+    0%{
+        right: -100%;
+    }
+    100%{
+        right: 0;
+    }
+}

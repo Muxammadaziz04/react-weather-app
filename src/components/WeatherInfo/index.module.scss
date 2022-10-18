@@ -1,0 +1,148 @@
+.weather {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__temp, &__location, &__info{
+        margin: 0 25px;
+    }
+
+    &__temp{
+        margin: 0;
+        font-size: 170px;
+        display: flex;
+    }
+
+    &__location{
+        &__name{
+            max-height: 60px;
+            margin: 0;
+            margin-bottom: 15px;
+            font-size: 60px;
+        }
+
+        &__time{
+            font-size: 20px;
+        }
+    }
+
+    &__info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        & > span{
+            font-size: 20px;
+        }
+        
+        & > img{
+            color: white;
+            width: 60px;
+            height: 60px;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+@media screen and (max-width:1270px) {
+    .weather{
+        &__temp, &__location, &__info {
+            margin: 0 10px;
+        }
+        
+        &__location__name{
+            height: clamp(40px, 40px, 40px);
+            margin-bottom: 10px;
+            font-size: 40px;
+        }
+
+        &__location__time{
+            font-size: 18px;
+        }
+
+        &__temp{
+            font-size: 100px;
+        }
+
+        &__info > img {
+            max-width: 40px;
+            max-height: 40px;
+            margin-bottom: 10px;
+        }
+
+        &__info span{
+            font-size: 18px;
+        }
+    }
+}
+
+@media screen and (max-width:950px) {
+    .weather{
+        &__temp{
+            font-size: 70px;
+        }
+        &__location__name{
+            height: clamp(30px, 30px, 30px);
+            font-size: 30px;
+        }
+        &__location__time{
+            font-size: 13px;
+        }
+        &__info > img {
+            max-width: 30px;
+            max-height: 30px;
+        }
+
+        &__info span{
+            font-size: 13px;
+        }
+    }
+}
+
+@media screen and (max-width:720px){
+    .weather{
+        align-self: center;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .weather{
+        &__temp{
+            font-size: 50px;
+        }
+
+        &__location__name{
+            height: clamp(20px, 20px, 20px);
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        &__location__time{
+            font-size: 12px;
+        }
+
+        &__info > img {
+            max-width: 20px;
+            max-height: 20px;
+        }
+
+        &__info span{
+            font-size: 12px;
+        }
+    }
+}
+
+@media screen and (max-width:350px) {
+    .weather{
+        flex-direction: column;
+        align-items: center;
+
+        &__location{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

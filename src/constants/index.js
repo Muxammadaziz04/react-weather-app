@@ -1,0 +1,12 @@
+export const HOST = 'https://api.weatherapi.com'
+export const API_KEY = process.env.REACT_APP_API_KEY
+export const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+export const month = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+export const regions = ['Tashkent', 'Andijon', 'Bukhoro', 'Farghona', 'Jizzakh', 'Khiva', 'Namangan', 'Navoi', 'Qarshi', 'Samarqand', 'Sirdaryo']
+export const mistCode = [1030, 1135, 1147, 1150, 1153, 1168, 1171, 1087, 1114, 1117]
+export const sunnyCode = [1000, 1003]
+export const cloudCode = [1006, 1009]
+export const rainCode = [1063, 1147, 1066, 1069, 1072, 1180, 1183, 1198, 1249, 1261]
+export const heavyRainCode = [1186, 1189, 1192, 1195, 1201, 1240, 1243, 1246, 1264]
+export const snowCode = [1204, 1207, 1210, 1213, 1216, 1219, 1222, 1225, 1237, 1252, 1258]
+export const thunderCode = [1273, 1276, 1279, 1282]
